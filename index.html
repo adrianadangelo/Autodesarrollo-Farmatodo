@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Formación 26-27 — Farmatodo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#001E62;--navy-80:#1a3576;--blue:#418FDE;--blue-light:#E8F2FC;--blue-mid:#B5D4F4;--green:#1D9E75;--green-light:#E1F5EE;--amber:#BA7517;--amber-light:#FAEEDA;--red:#E24B4A;--red-light:#FCEBEB;--pink-light:#FBEAF0;--pink:#D4537E;--purple:#7C3AED;--purple-light:#F3E8FF;--purple-mid:#C4B5FD;--gray-50:#F7F8FA;--gray-100:#EEF0F5;--gray-200:#D8DCE8;--gray-400:#8892A8;--gray-600:#4A5568;--white:#fff;--r-sm:6px;--r-md:10px;--r-lg:16px;--r-xl:24px;--sh-sm:0 1px 3px rgba(0,30,98,.08),0 1px 2px rgba(0,30,98,.05);--sh-md:0 4px 16px rgba(0,30,98,.10),0 2px 6px rgba(0,30,98,.06);--sh-lg:0 12px 40px rgba(0,30,98,.14),0 4px 12px rgba(0,30,98,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--gray-50);color:var(--navy);font-size:14px;line-height:1.5}
+.topbar{background:var(--navy);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,30,98,.3)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-icon{width:32px;height:32px;background:white;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center}
+.brand-text{color:white}.brand-text strong{font-size:14px;font-weight:600;display:block}.brand-text span{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:.8px;text-transform:uppercase}
+.topbar-nav{display:flex;gap:2px}
+.tnav{padding:6px 14px;font-size:13px;font-family:'DM Sans',sans-serif;border-radius:var(--r-sm);cursor:pointer;color:rgba(255,255,255,.6);border:none;background:transparent;transition:all .15s}
+.tnav:hover{color:white;background:rgba(255,255,255,.1)}.tnav.active{color:white;background:rgba(255,255,255,.16);font-weight:500}
+.topbar-right{display:flex;align-items:center;gap:12px}
+.notif-btn{position:relative;background:none;border:none;cursor:pointer;color:rgba(255,255,255,.6);font-size:20px;padding:4px}
+.nb{position:absolute;top:2px;right:2px;width:8px;height:8px;border-radius:50%;background:var(--red);border:1.5px solid var(--navy)}
+.user-pill{display:flex;align-items:center;gap:8px}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:white}
+.user-email{font-size:12px;color:rgba(255,255,255,.65)}
+.app-body{display:none}.app-body.active{display:block}
+.pw{max-width:1100px;margin:0 auto;padding:24px 20px 48px}
+.sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.st{font-size:15px;font-weight:600;color:var(--navy)}.ss{font-size:12px;color:var(--gray-400);margin-top:2px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gf2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gf3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--gray-100);padding:20px;box-shadow:var(--sh-sm)}
+.mc{background:var(--gray-50);border-radius:var(--r-md);padding:14px 16px;border:1px solid var(--gray-100)}
+.mc-l{font-size:11px;color:var(--gray-400);font-weight:500;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.mc-v{font-size:26px;font-weight:600;line-height:1}.mc-s{font-size:11px;color:var(--gray-400);margin-top:3px}
+.pt{height:6px;background:var(--gray-100);border-radius:3px;overflow:hidden;margin-top:6px}
+.pf{height:100%;border-radius:3px;transition:width .5s ease}
+.pn{background:var(--navy)}.pg{background:var(--green)}.pa{background:var(--amber)}
+.badge{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
+.b-e{background:var(--green-light);color:#085041}.b-el{background:var(--blue-light);color:#0C447C}
+.b-bo{background:var(--amber-light);color:#633806}.b-en{background:var(--blue-light);color:#0C447C}
+.b-ap{background:#EAF3DE;color:#27500A}.b-re{background:var(--red-light);color:#791F1F}
+.b-di{background:var(--pink-light);color:#72243E}.b-su{background:var(--amber-light);color:#633806}
+.b-ob{background:var(--purple-light);color:#5B21B6}
+.pg-wrap{display:flex;gap:6px;flex-wrap:wrap}
+.pill{padding:5px 14px;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;border:1.5px solid var(--gray-200);background:white;color:var(--gray-600);transition:all .15s}
+.pill:hover{border-color:var(--blue);color:var(--blue)}.pill.active{background:var(--navy);border-color:var(--navy);color:white}
+.tab-bar{display:flex;border-bottom:2px solid var(--gray-100);margin-bottom:20px}
+.tab{padding:10px 18px;font-size:13px;font-weight:500;cursor:pointer;color:var(--gray-400);border:none;background:transparent;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s;font-family:'DM Sans',sans-serif}
+.tab:hover{color:var(--navy)}.tab.active{color:var(--navy);border-bottom-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:var(--r-md);font-size:13px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;border:1.5px solid var(--gray-200);background:white;color:var(--navy);transition:all .15s}
+.btn:hover{background:var(--gray-50)}.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-p{background:var(--navy);color:white;border-color:var(--navy)}.btn-p:hover{background:var(--navy-80)}
+.btn-sm{padding:5px 10px;font-size:12px;border-radius:var(--r-sm)}
+.btn-ap{background:#EAF3DE;color:#27500A;border-color:#C0DD97}
+.btn-di{background:var(--pink-light);color:#72243E;border-color:#F4C0D1}
+.btn-re{background:var(--red-light);color:#791F1F;border-color:#F7C1C1}
+.btn-ic{width:30px;height:30px;padding:0;justify-content:center;border-radius:var(--r-sm)}
+.ni{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--gray-50);border-radius:var(--r-md);margin-bottom:8px;border:1px solid var(--gray-100)}
+.nd{width:8px;height:8px;border-radius:50%;margin-top:4px;flex-shrink:0}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.fcard{background:white;border:1.5px solid var(--gray-100);border-radius:var(--r-md);padding:14px;cursor:pointer;transition:all .2s;position:relative;box-shadow:var(--sh-sm)}
+.fcard:hover{border-color:var(--blue);box-shadow:var(--sh-md);transform:translateY(-1px)}
+.fcard.sel{border-color:var(--blue);background:var(--blue-light);box-shadow:0 0 0 3px rgba(65,143,222,.15)}
+.fcard.locked{border-color:var(--purple-mid);background:var(--purple-light);cursor:default}
+.fcard.locked:hover{transform:none;box-shadow:var(--sh-sm)}
+.fcard.sug{border-left:3px solid var(--amber)}
+.fcard-top{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.fcard-name{font-size:13px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:6px}
+.fcard-meta{display:flex;flex-wrap:wrap;gap:6px;font-size:11px;color:var(--gray-400);align-items:center}
+.fcard-fac{margin-top:8px;display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:500;color:var(--navy);background:var(--blue-light);padding:3px 8px;border-radius:var(--r-sm)}
+.fcard-cr{position:absolute;top:12px;right:12px;font-size:11px;font-weight:600;color:#0C447C;background:var(--blue-light);padding:2px 8px;border-radius:20px}
+.fcard-tick{position:absolute;bottom:10px;right:10px;width:20px;height:20px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:white;font-size:11px}
+.fcard-lock{position:absolute;bottom:10px;right:10px;width:20px;height:20px;border-radius:50%;background:var(--purple);display:flex;align-items:center;justify-content:center;color:white;font-size:11px}
+.locked-banner{background:rgba(124,58,237,.1);border-radius:var(--r-sm);padding:4px 8px;font-size:11px;color:var(--purple);display:flex;align-items:center;gap:4px;margin-top:6px}
+.si{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--gray-50);border-radius:var(--r-md);border:1px solid var(--gray-100);margin-bottom:6px}
+.si.locked-si{background:var(--purple-light);border-color:var(--purple-mid)}
+.si-name{font-size:13px;font-weight:500;flex:1}.si-tags{display:flex;align-items:center;gap:8px}
+.pb-block{background:white;border:1px solid var(--gray-100);border-radius:var(--r-lg);margin-bottom:10px;overflow:hidden;box-shadow:var(--sh-sm)}
+.pb-head{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background .15s}
+.pb-head:hover{background:var(--gray-50)}.pb-left{display:flex;align-items:center;gap:12px}
+.pb-body{padding:0 18px 14px;border-top:1px solid var(--gray-100);display:none}.pb-body.open{display:block}
+.fr{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--gray-100);gap:12px}
+.fr:last-of-type{border-bottom:none}.fr-i{flex:1;min-width:0}
+.fr-n{font-size:13px;font-weight:500}.fr-m{font-size:11px;color:var(--gray-400);margin-top:2px;display:flex;gap:8px;flex-wrap:wrap}
+.fr-a{display:flex;gap:5px;flex-shrink:0}
+.ai{display:flex;align-items:center;gap:12px;padding:12px 14px;background:white;border-radius:var(--r-md);margin-bottom:8px;border:1px solid var(--gray-100);box-shadow:var(--sh-sm)}
+.ai-n{font-weight:500;flex:1;font-size:13px}.ai-i{font-size:12px;color:var(--gray-400)}
+.ci{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--gray-50);border-radius:var(--r-md);margin-bottom:6px;border:1px solid var(--gray-100)}
+.cn{font-size:13px;font-weight:500;flex:1}.ct{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.lc{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.lcard{background:white;border:1px solid var(--gray-100);border-radius:var(--r-md);padding:14px;text-align:center;box-shadow:var(--sh-sm)}
+.lcard.hl{border-color:var(--blue);border-width:2px}.lr{font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.lv{font-size:28px;font-weight:700;color:var(--navy)}.lv.bl{color:var(--blue)}.lh{font-size:11px;color:var(--gray-400);margin-top:3px}
+.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:500;color:var(--gray-600)}
+input,select,textarea{font-size:13px;font-family:'DM Sans',sans-serif;padding:9px 12px;border:1.5px solid var(--gray-200);border-radius:var(--r-md);background:white;color:var(--navy);width:100%;transition:border-color .15s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--blue)}textarea{resize:vertical}
+.sup-box{background:var(--blue-light);border:1.5px solid var(--blue-mid);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:20px}
+.sup-box-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.sup-box-sub{font-size:12px;color:var(--gray-600);margin-bottom:14px}
+.sup-saved{background:var(--green-light);border:1.5px solid #6EE7C2;border-radius:var(--r-md);padding:12px 16px;display:flex;align-items:center;gap:12px;font-size:13px;color:#085041}
+.atbl{width:100%;border-collapse:collapse}
+.atbl th{font-size:11px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;background:var(--gray-50);border-bottom:1px solid var(--gray-100);text-align:left}
+.atbl td{padding:10px 12px;border-bottom:1px solid var(--gray-100);font-size:13px;vertical-align:middle}
+.atbl tr:last-child td{border-bottom:none}.atbl tr:hover td{background:var(--gray-50)}
+.etag{display:inline-flex;align-items:center;gap:3px;background:var(--green-light);color:#085041;border-radius:20px;padding:2px 8px;font-size:11px;font-weight:500;margin:2px}
+.ck-item{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--gray-50);border-radius:var(--r-md);border:1px solid var(--gray-100);cursor:pointer;transition:border-color .15s}
+.ck-item:hover{border-color:var(--blue)}.ck-item input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy);cursor:pointer;flex-shrink:0}
+.fac-chip{display:inline-flex;align-items:center;gap:5px;background:var(--blue-light);border:1px solid var(--blue-mid);border-radius:var(--r-sm);padding:5px 12px;font-size:13px;font-weight:600;color:var(--navy)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#0d3580 100%);border-radius:var(--r-xl);padding:28px 28px 24px;color:white;position:relative;overflow:hidden;margin-bottom:20px}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(65,143,222,.15)}
+.hero::after{content:'';position:absolute;bottom:-60px;right:60px;width:120px;height:120px;border-radius:50%;background:rgba(65,143,222,.08)}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
+.hero-user{display:flex;gap:14px;align-items:center}
+.hero-av{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.2);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;color:white}
+.hero-name{font-size:18px;font-weight:600}.hero-role{font-size:13px;color:rgba(255,255,255,.6);margin-top:2px}.hero-period{font-size:12px;color:rgba(255,255,255,.45);margin-top:2px}
+.hero-mets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hm{background:rgba(255,255,255,.1);border-radius:var(--r-md);padding:12px 14px;border:1px solid rgba(255,255,255,.12)}
+.hm-l{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.hm-v{font-size:22px;font-weight:700}.hm-s{font-size:11px;color:rgba(255,255,255,.45);margin-top:2px}
+.hero-prog{margin-top:14px}.hp-l{display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.6);margin-bottom:6px}
+.hp-t{height:6px;background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden}
+.hp-f{height:100%;background:var(--blue);border-radius:3px;transition:width .5s ease}
+.mo{display:none;position:fixed;inset:0;background:rgba(0,10,40,.5);z-index:200;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}
+.mo.open{display:flex}
+.mb{background:white;border-radius:var(--r-xl);width:500px;max-width:100%;max-height:90vh;overflow-y:auto;box-shadow:var(--sh-lg);animation:mi .2s ease}
+@keyframes mi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.mh{padding:20px 24px 16px;border-bottom:1px solid var(--gray-100);display:flex;justify-content:space-between;align-items:flex-start}
+.mt{font-size:16px;font-weight:600;color:var(--navy)}.mc-btn{background:none;border:none;cursor:pointer;color:var(--gray-400);font-size:20px;padding:0}
+.mc-btn:hover{color:var(--navy)}.mbody{padding:20px 24px}
+.mfoot{padding:16px 24px;border-top:1px solid var(--gray-100);display:flex;justify-content:flex-end;gap:8px}
+.ds{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.dsc{background:var(--gray-50);border-radius:var(--r-md);padding:10px 12px;text-align:center;border:1px solid var(--gray-100)}
+.dsc-l{font-size:11px;color:var(--gray-400);margin-bottom:4px}.dsc-v{font-size:15px;font-weight:600;color:var(--navy)}
+.ep{background:var(--gray-50);border-radius:var(--r-md);border-left:3px solid var(--blue);padding:14px 16px;font-size:13px;line-height:1.7;color:var(--gray-600);margin-top:12px}
+.ep strong{color:var(--navy)}
+.divider{height:1px;background:var(--gray-100);margin:20px 0}
+.pi{margin-bottom:12px}.pi-l{display:flex;justify-content:space-between;font-size:13px;color:var(--gray-600);margin-bottom:5px}
+.pi-l span:last-child{font-weight:500;color:var(--navy)}
+.empty{text-align:center;padding:32px;color:var(--gray-400);font-size:13px}.empty i{font-size:36px;display:block;margin-bottom:8px}
+.tag-n{font-size:11px;padding:2px 8px;border-radius:20px;background:#EEF0F5;color:var(--navy);font-weight:500}
+.hist-item{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#F0FDF9;border-radius:var(--r-md);border-left:3px solid var(--green);margin-bottom:6px}
+/* LOGIN */
+.ls{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#001E62 0%,#0a2d82 50%,#1a4aad 100%);padding:20px}
+.lcard{background:white;border-radius:var(--r-xl);padding:40px;width:400px;max-width:100%;box-shadow:var(--sh-lg);animation:mi .3s ease}
+.ll{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.ll-box{width:40px;height:40px;background:var(--navy);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center}
+.ll-text strong{display:block;font-size:15px;font-weight:700;color:var(--navy)}.ll-text span{font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px}
+.lt{font-size:22px;font-weight:700;color:var(--navy);margin-bottom:6px;font-family:'DM Serif Display',serif}
+.ls2{font-size:13px;color:var(--gray-400);margin-bottom:24px}
+.lf{margin-bottom:14px}.lf label{display:block;font-size:12px;font-weight:600;color:var(--gray-600);margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+.lb{width:100%;padding:12px;background:var(--navy);color:white;border:none;border-radius:var(--r-md);font-size:14px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:background .15s;margin-top:6px}
+.lb:hover{background:var(--navy-80)}.ln{font-size:11px;color:var(--gray-400);text-align:center;margin-top:14px}
+.login-error{font-size:12px;color:var(--red);margin-top:8px;display:none}
+.loading-msg{font-size:13px;color:var(--blue);margin-top:8px;display:none;text-align:center}
+@media(max-width:768px){.fgrid{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.g4{grid-template-columns:1fr 1fr}.lc{grid-template-columns:1fr 1fr}.hero-mets{grid-template-columns:1fr 1fr}.user-email{display:none}.tnav{padding:6px 10px;font-size:12px}}
+@media(max-width:480px){.fgrid{grid-template-columns:1fr}.topbar{padding:0 12px}.pw{padding:16px 12px 48px}}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen" class="ls">
+  <div class="lcard">
+    <div class="ll">
+      <div class="ll-box"><svg viewBox="0 0 28 28" fill="none" width="28" height="28"><path d="M14 3C9.6 3 6 6.6 6 11c0 2.4 1 4.5 2.7 6l1.3 5h8l1.3-5C20.9 15.5 22 13.4 22 11c0-4.4-3.6-8-8-8z" fill="white"/><circle cx="14" cy="11" r="2.5" fill="#001E62"/></svg></div>
+      <div class="ll-text"><strong>Plan de Formación 26-27</strong><span>Academia Farmatodo</span></div>
+    </div>
+    <div class="lt">Bienvenido/a</div>
+    <div class="ls2">Ingresa tu número de cédula para acceder a tu plan de formación personalizado.</div>
+    <div class="lf"><label>Número de cédula</label><input type="number" id="l-cedula" placeholder="Ej: 14952677" autofocus></div>
+    <button class="lb" onclick="doLogin()">Ingresar</button>
+    <div class="login-error" id="login-error">Cédula no encontrada. Verifica el número e intenta nuevamente.</div>
+    <div class="loading-msg" id="loading-msg"><i class="ti ti-loader-2"></i> Verificando cédula...</div>
+    <div class="ln">¿Problemas? Escribe a <strong>soporte.academia@farmatodo.com</strong></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none">
+  <nav class="topbar">
+    <div class="brand">
+      <div class="brand-icon"><svg viewBox="0 0 28 28" fill="none" width="22" height="22"><path d="M14 3C9.6 3 6 6.6 6 11c0 2.4 1 4.5 2.7 6l1.3 5h8l1.3-5C20.9 15.5 22 13.4 22 11c0-4.4-3.6-8-8-8z" fill="#001E62"/><circle cx="14" cy="11" r="2.5" fill="white"/></svg></div>
+      <div class="brand-text"><strong>Plan de Formación 26-27</strong><span>Academia Farmatodo</span></div>
+    </div>
+    <div class="topbar-nav">
+      <button class="tnav active" onclick="showView('colaborador',this)">Mi plan</button>
+      <button class="tnav" onclick="showView('supervisor',this)">Supervisor</button>
+      <button class="tnav" onclick="showView('capacitacion',this)">Capacitación</button>
+    </div>
+    <div class="topbar-right">
+      <button class="notif-btn"><i class="ti ti-bell"></i><span class="nb"></span></button>
+      <div class="user-pill"><div class="avatar" id="t-av">CO</div><span class="user-email" id="t-em">C.I. ...</span></div>
+    </div>
+  </nav>
+
+  <!-- COLABORADOR -->
+  <div class="app-body active" id="view-colaborador">
+    <div class="pw">
+      <div class="hero">
+        <div class="hero-top">
+          <div class="hero-user">
+            <div class="hero-av" id="hero-av">CO</div>
+            <div>
+              <div class="hero-name" id="hero-name">Cargando...</div>
+              <div class="hero-role" id="hero-role"></div>
+              <div class="hero-period">Plan fiscal 2026 – 2027</div>
+            </div>
+          </div>
+          <span class="badge b-bo" id="plan-status">Borrador</span>
+        </div>
+        <div class="hero-mets">
+          <div class="hm"><div class="hm-l">Créditos inscritos</div><div class="hm-v" id="cr-d">0</div><div class="hm-s" id="cr-meta">meta: — créditos</div></div>
+          <div class="hm"><div class="hm-l">Formaciones</div><div class="hm-v" id="f-d">0</div><div class="hm-s">seleccionadas</div></div>
+          <div class="hm"><div class="hm-l">Horas totales</div><div class="hm-v" id="h-d">0h</div><div class="hm-s">meta: 12–20h</div></div>
+        </div>
+        <div class="hero-prog">
+          <div class="hp-l"><span id="pr-txt">0% del objetivo alcanzado</span><span id="pr-pct">0 / — cr.</span></div>
+          <div class="hp-t"><div class="hp-f" id="h-bar" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <!-- SUPERVISOR BOX -->
+      <div class="sup-box" id="sup-form-box">
+        <div class="sup-box-title"><i class="ti ti-user-check" style="color:var(--blue)"></i> Datos de tu supervisor</div>
+        <div class="sup-box-sub">Necesitamos el nombre y correo de tu supervisor para enviarle la solicitud de aprobación de tu plan.</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:580px">
+          <div class="field"><label>Nombre del supervisor</label><input type="text" id="s-name" placeholder="Ej: Carlos Rivas"></div>
+          <div class="field"><label>Correo corporativo del supervisor</label><input type="email" id="s-email" placeholder="Ej: carlos.rivas@farmatodo.com"></div>
+        </div>
+        <div style="margin-top:12px;display:flex;align-items:center;gap:10px">
+          <button class="btn btn-p btn-sm" onclick="saveSup()"><i class="ti ti-device-floppy"></i> Guardar supervisor</button>
+        </div>
+      </div>
+      <div id="sup-saved-box" style="display:none;margin-bottom:20px">
+        <div class="sup-saved">
+          <i class="ti ti-user-check" style="font-size:20px"></i>
+          <div><div style="font-weight:600" id="sup-saved-name"></div><div style="font-size:12px;opacity:.8" id="sup-saved-email"></div></div>
+          <button class="btn btn-sm" style="margin-left:auto" onclick="editSup()"><i class="ti ti-edit"></i> Editar</button>
+        </div>
+      </div>
+
+      <div class="g2" style="margin-bottom:20px">
+        <div class="card">
+          <div class="sh"><div class="st"><i class="ti ti-bell" style="color:var(--blue)"></i> Notificaciones</div></div>
+          <div id="notif-list">
+            <div class="ni"><div class="nd" style="background:var(--amber)"></div><div><div style="font-size:13px;color:var(--gray-600)">El plan 26-27 cierra el <strong id="fecha-cierre-txt">30 de junio 2026</strong>. Completa tu selección.</div><div style="font-size:11px;color:var(--gray-400);margin-top:2px">Recuerda enviar tu plan a aprobación antes del cierre.</div></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="sh">
+            <div class="st"><i class="ti ti-list-check" style="color:var(--blue)"></i> Mi plan seleccionado</div>
+            <button class="btn btn-p btn-sm" onclick="openSendModal()"><i class="ti ti-send"></i> Enviar a aprobación</button>
+          </div>
+          <div id="sel-list"><div class="empty"><i class="ti ti-layout-grid-add"></i>Las Esenciales obligatorias aparecerán aquí. Agrega Electivas desde la oferta académica.</div></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:20px">
+        <div class="sh">
+          <div>
+            <div class="st" id="oferta-title">Oferta académica</div>
+            <div class="ss">Las formaciones con <span style="color:var(--purple);font-weight:600"><i class="ti ti-lock"></i> Obligatoria</span> fueron asignadas por Capacitación y no se pueden quitar.</div>
+          </div>
+          <div class="pg-wrap" id="fp">
+            <button class="pill active" onclick="filterF('all',this)">Todas</button>
+            <button class="pill" onclick="filterF('esencial',this)">Esenciales</button>
+            <button class="pill" onclick="filterF('electiva',this)">Electivas</button>
+          </div>
+        </div>
+        <div class="fgrid" id="fgrid"></div>
+      </div>
+
+      <!-- HISTORIAL -->
+      <div class="card" id="historial-section" style="display:none">
+        <div class="sh">
+          <div class="st"><i class="ti ti-history" style="color:var(--green)"></i> Mi historial de formaciones</div>
+          <span class="badge b-e" id="hist-count">0 completadas</span>
+        </div>
+        <div id="hist-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPERVISOR -->
+  <div class="app-body" id="view-supervisor">
+    <div class="pw">
+      <div style="margin-bottom:20px"><div class="st" style="font-size:18px;margin-bottom:4px">Panel del Supervisor</div><div class="ss">Revisa y aprueba los planes de formación de tu equipo</div></div>
+      <div class="g4" style="margin-bottom:20px">
+        <div class="mc"><div class="mc-l">Colaboradores</div><div class="mc-v">18</div><div class="mc-s">a cargo</div></div>
+        <div class="mc"><div class="mc-l">Pendientes</div><div class="mc-v" style="color:var(--amber)">4</div><div class="mc-s">por revisar</div></div>
+        <div class="mc"><div class="mc-l">Aprobados</div><div class="mc-v" style="color:var(--green)">11</div></div>
+        <div class="mc"><div class="mc-l">Por discutir</div><div class="mc-v" style="color:var(--pink)">3</div></div>
+      </div>
+      <div class="tab-bar">
+        <button class="tab active" onclick="supTab('pend',this)">Pendientes (4)</button>
+        <button class="tab" onclick="supTab('sug',this)">Sugerir formaciones</button>
+        <button class="tab" onclick="supTab('hist',this)">Historial</button>
+      </div>
+      <div id="sup-pend">
+        <div class="pb-block">
+          <div class="pb-head" onclick="togglePlan(this)">
+            <div class="pb-left">
+              <div class="avatar" style="width:38px;height:38px;font-size:13px;background:var(--navy)" id="sup-av1">VP</div>
+              <div><div style="font-size:14px;font-weight:600" id="sup-name1">Colaborador</div><div style="font-size:12px;color:var(--gray-400)">5 formaciones · 9 créditos</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px"><span class="badge b-en">Enviado</span><i class="ti ti-chevron-down" style="color:var(--gray-400)"></i></div>
+          </div>
+          <div class="pb-body open" style="padding-top:10px">
+            <div class="fr"><div class="fr-i"><div class="fr-n">Escuela de Servicio — Oficina <span class="badge b-ob" style="margin-left:5px"><i class="ti ti-lock"></i> Obligatoria</span></div><div class="fr-m"><span class="badge b-e">Esencial</span><span>2 cr. · Virtual · Farmatodo Academy</span></div></div><div class="fr-a" id="fr1"><button class="btn btn-sm btn-ap" onclick="setSup(1,'ap')"><i class="ti ti-check"></i> Aprobar</button><button class="btn btn-sm btn-di" onclick="setSup(1,'di')">Por discutir</button><button class="btn btn-sm btn-re btn-ic" onclick="setSup(1,'re')"><i class="ti ti-x"></i></button></div></div>
+            <div class="fr"><div class="fr-i"><div class="fr-n">Gestión por Competencias <span class="badge b-su" style="margin-left:4px"><i class="ti ti-star"></i> Sugerida</span></div><div class="fr-m"><span class="badge b-e">Esencial</span><span>2 cr. · Virtual · Farmatodo Academy</span></div></div><div class="fr-a" id="fr2"><button class="btn btn-sm btn-ap" onclick="setSup(2,'ap')"><i class="ti ti-check"></i> Aprobar</button><button class="btn btn-sm btn-di" onclick="setSup(2,'di')">Por discutir</button><button class="btn btn-sm btn-re btn-ic" onclick="setSup(2,'re')"><i class="ti ti-x"></i></button></div></div>
+            <div class="fr"><div class="fr-i"><div class="fr-n">Liderazgo e Influencia</div><div class="fr-m"><span class="badge b-el">Electiva</span><span>3 cr. · Presencial · IESA</span></div></div><div class="fr-a" id="fr3"><button class="btn btn-sm btn-ap" onclick="setSup(3,'ap')"><i class="ti ti-check"></i> Aprobar</button><button class="btn btn-sm btn-di" onclick="setSup(3,'di')">Por discutir</button><button class="btn btn-sm btn-re btn-ic" onclick="setSup(3,'re')"><i class="ti ti-x"></i></button></div></div>
+            <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--gray-100);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+              <span style="font-size:12px;color:var(--gray-400)">Aprueba formación por formación o el plan completo</span>
+              <div style="display:flex;gap:8px">
+                <button class="btn btn-sm" onclick="openCommentModal()"><i class="ti ti-message"></i> Comentar y devolver</button>
+                <button class="btn btn-sm btn-p" onclick="approveAll()"><i class="ti ti-checks"></i> Aprobar todo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pb-block">
+          <div class="pb-head" onclick="togglePlan(this)">
+            <div class="pb-left"><div class="avatar" style="width:38px;height:38px;font-size:13px;background:var(--blue)">LM</div><div><div style="font-size:14px;font-weight:600">Luis Méndez</div><div style="font-size:12px;color:var(--gray-400)">Coordinador · 5 formaciones · 10 créditos</div></div></div>
+            <div style="display:flex;align-items:center;gap:10px"><span class="badge b-en">Enviado</span><i class="ti ti-chevron-down" style="color:var(--gray-400)"></i></div>
+          </div>
+          <div class="pb-body"></div>
+        </div>
+      </div>
+      <div id="sup-sug" style="display:none">
+        <div class="card">
+          <div class="st" style="margin-bottom:14px"><i class="ti ti-bulb" style="color:var(--amber)"></i> Sugerir formación</div>
+          <div style="display:flex;flex-direction:column;gap:12px;max-width:480px">
+            <div class="field"><label>Colaborador</label><select><option>Seleccionar...</option><option selected>Colaborador 1</option><option>Luis Méndez — Coordinador</option></select></div>
+            <div class="field"><label>Formación</label><select><option>Seleccionar...</option><option>Liderazgo e Influencia (Electiva · IESA · 3 cr.)</option><option>Comunicación Ejecutiva (Electiva · Liderazgo21 · 3 cr.)</option></select></div>
+            <div class="field"><label>Mensaje (opcional)</label><textarea rows="3" placeholder="Contexto para el colaborador..."></textarea></div>
+            <div><button class="btn btn-p" onclick="alert('Sugerencia enviada.')"><i class="ti ti-send"></i> Enviar sugerencia</button></div>
+          </div>
+        </div>
+      </div>
+      <div id="sup-hist" style="display:none">
+        <div class="card">
+          <div class="st" style="margin-bottom:14px"><i class="ti ti-history" style="color:var(--blue)"></i> Planes aprobados</div>
+          <div class="ci"><div class="cn">María Rodríguez — Analista</div><div class="ct"><span class="badge b-ap">Aprobado</span><span style="font-size:12px;color:var(--gray-400)">5 cr. · 4 jun</span></div></div>
+          <div class="ci"><div class="cn">Pedro Castillo — Analista</div><div class="ct"><span class="badge b-ap">Aprobado</span><span style="font-size:12px;color:var(--gray-400)">6 cr. · 2 jun</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAPACITACIÓN -->
+  <div class="app-body" id="view-capacitacion">
+    <div class="pw">
+      <div style="margin-bottom:20px"><div class="st" style="font-size:18px;margin-bottom:4px">Panel de Capacitación</div><div class="ss">Piloto Oficina Corporativa Venezuela — Plan fiscal 2026-27</div></div>
+      <div class="tab-bar">
+        <button class="tab active" onclick="capTab('dash',this)">Dashboard</button>
+        <button class="tab" onclick="capTab('asign',this)">Asignar Esenciales</button>
+        <button class="tab" onclick="capTab('cat',this)">Oferta académica</button>
+        <button class="tab" onclick="capTab('alert',this)">Alertas</button>
+      </div>
+
+      <div id="cap-dash">
+        <div class="g4" style="margin-bottom:20px">
+          <div class="mc"><div class="mc-l">Colaboradores OC VE</div><div class="mc-v">284</div><div class="mc-s">piloto activo</div></div>
+          <div class="mc"><div class="mc-l">Planes enviados</div><div class="mc-v">163</div><div class="mc-s">57% del total</div></div>
+          <div class="mc"><div class="mc-l">Planes aprobados</div><div class="mc-v" style="color:var(--green)">98</div><div class="mc-s">60% enviados</div></div>
+          <div class="mc"><div class="mc-l">Alertas activas</div><div class="mc-v" style="color:var(--amber)">41</div><div class="mc-s">bajo meta</div></div>
+        </div>
+        <div class="lc">
+          <div class="lcard"><div class="lr">Director</div><div class="lv">4 cr.</div><div class="lh">12–16h</div></div>
+          <div class="lcard"><div class="lr">Gerente</div><div class="lv">6 cr.</div><div class="lh">20–24h</div></div>
+          <div class="lcard hl"><div class="lr">Coord./Especialista</div><div class="lv bl">8 cr.</div><div class="lh">24–32h</div></div>
+          <div class="lcard"><div class="lr">Analista</div><div class="lv">5 cr.</div><div class="lh">12–20h</div></div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px 16px;background:var(--blue-light);border-radius:var(--r-md);border:1px solid var(--blue-mid)">
+          <div style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:8px"><i class="ti ti-calendar" style="color:var(--blue)"></i> Fecha de cierre del plan</div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <input type="text" id="fecha-cierre-input" value="30 de junio 2026" style="max-width:200px">
+            <button class="btn btn-p btn-sm" onclick="actualizarFechaCierre()"><i class="ti ti-check"></i> Actualizar</button>
+            <span id="fecha-ok" style="font-size:12px;color:var(--green);display:none"><i class="ti ti-check"></i> Fecha actualizada</span>
+          </div>
+        </div>
+        <div class="g2">
+          <div class="card">
+            <div class="st" style="margin-bottom:16px"><i class="ti ti-chart-bar" style="color:var(--blue)"></i> Avance por área</div>
+            <div class="pi"><div class="pi-l"><span>Tecnología (29)</span><span>88%</span></div><div class="pt"><div class="pf pg" style="width:88%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Recursos Humanos (48)</span><span>72%</span></div><div class="pt"><div class="pf pg" style="width:72%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Finanzas (36)</span><span>61%</span></div><div class="pt"><div class="pf pn" style="width:61%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Operaciones (72)</span><span>54%</span></div><div class="pt"><div class="pf pn" style="width:54%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Comercial (55)</span><span>41%</span></div><div class="pt"><div class="pf pa" style="width:41%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Planificación (44)</span><span>33%</span></div><div class="pt"><div class="pf pa" style="width:33%"></div></div></div>
+            <div class="divider"></div>
+            <button class="btn btn-p btn-sm" onclick="alert('Generando campaña de activación...')"><i class="ti ti-mail"></i> Generar campaña de activación</button>
+          </div>
+          <div class="card">
+            <div class="st" style="margin-bottom:16px"><i class="ti ti-award" style="color:var(--blue)"></i> Créditos por nivel</div>
+            <div class="pi"><div class="pi-l"><span>Directores (12)</span><span>3.2/4 cr.</span></div><div class="pt"><div class="pf pg" style="width:80%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Gerentes (31)</span><span>4.1/6 cr.</span></div><div class="pt"><div class="pf pn" style="width:68%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Coordinadores (78)</span><span>4.8/8 cr.</span></div><div class="pt"><div class="pf pa" style="width:60%"></div></div></div>
+            <div class="pi"><div class="pi-l"><span>Analistas (163)</span><span>2.9/5 cr.</span></div><div class="pt"><div class="pf pa" style="width:58%"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cap-asign" style="display:none">
+        <div class="g2" style="align-items:start">
+          <div class="card">
+            <div class="st" style="margin-bottom:4px"><i class="ti ti-lock" style="color:var(--purple)"></i> Asignar Esenciales por colaborador</div>
+            <div class="ss" style="margin-bottom:16px">Las formaciones asignadas aparecerán precargadas y bloqueadas en el plan del colaborador.</div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div class="field"><label>Colaborador</label><select id="a-collab" onchange="renderCklist()"><option value="">Seleccionar...</option><option value="VP">Colaborador 1</option><option value="LM">Luis Méndez — Coordinador</option><option value="AT">Ana Torres — Analista</option><option value="RS">Roberto Salinas — Analista</option><option value="CV">Carmen Villalobos — Coordinadora</option></select></div>
+              <div><div style="font-size:12px;font-weight:500;color:var(--gray-600);margin-bottom:8px;text-transform:uppercase;letter-spacing:.4px">Esenciales a asignar</div><div id="ck-list" style="display:flex;flex-direction:column;gap:6px"><div style="font-size:13px;color:var(--gray-400);padding:12px;text-align:center;border:1.5px dashed var(--gray-200);border-radius:var(--r-md)">Selecciona un colaborador</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px"><button class="btn btn-p" onclick="saveAssign()"><i class="ti ti-device-floppy"></i> Guardar asignación</button><span id="a-ok" style="font-size:12px;color:var(--green);display:none"><i class="ti ti-check"></i> Guardada y notificada</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="st" style="margin-bottom:14px"><i class="ti ti-table" style="color:var(--blue)"></i> Esenciales asignadas</div>
+            <table class="atbl"><thead><tr><th>Colaborador</th><th>Esenciales asignadas</th><th style="width:40px"></th></tr></thead><tbody id="a-tbody"></tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <div id="cap-cat" style="display:none">
+        <div class="g2" style="align-items:start">
+          <div class="card">
+            <div class="st" style="margin-bottom:16px"><i class="ti ti-plus" style="color:var(--blue)"></i> Agregar formación</div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div class="field"><label>Nombre</label><input placeholder="Ej: Liderazgo Situacional"></div>
+              <div class="gf2"><div class="field"><label>Tipo</label><select><option>Esencial</option><option>Electiva</option></select></div><div class="field"><label>Nivel</label><select><option>Director</option><option>Gerente</option><option>Coord./Especialista</option><option selected>Analista</option><option>Todos</option></select></div></div>
+              <div class="field"><label>Facilitador</label><input placeholder="Ej: IESA, Liderazgo21, Farmatodo Academy"></div>
+              <div class="gf3"><div class="field"><label>Modalidad</label><select><option>Virtual</option><option>Presencial</option><option>E-learning</option></select></div><div class="field"><label>Duración</label><input placeholder="8h"></div><div class="field"><label>Créditos</label><select><option>1 cr.</option><option selected>2 cr.</option><option>3 cr.</option><option>4 cr.</option><option>5 cr.</option></select></div></div>
+              <div class="field"><label>Descripción</label><textarea rows="3" placeholder="Objetivos y contenidos..."></textarea></div>
+              <div><button class="btn btn-p" onclick="alert('Formación publicada.')"><i class="ti ti-upload"></i> Publicar</button></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="st" style="margin-bottom:14px"><i class="ti ti-books" style="color:var(--blue)"></i> Oferta activa — 0 formaciones</div>
+            <div style="text-align:center;padding:24px 12px;color:var(--gray-400);font-size:13px;border:1.5px dashed var(--gray-200);border-radius:var(--r-md)"><i class="ti ti-books" style="font-size:28px;display:block;margin-bottom:6px;color:var(--gray-200)"></i>Aún no has publicado formaciones.<br>Usa el formulario para agregar la primera.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cap-alert" style="display:none">
+        <div class="card">
+          <div class="sh"><div><div class="st"><i class="ti ti-alert-triangle" style="color:var(--amber)"></i> 41 colaboradores bajo meta</div><div class="ss">Última actualización: hoy 09:00</div></div><button class="btn btn-p btn-sm" onclick="alert('Recordatorio masivo enviado.')"><i class="ti ti-mail"></i> Recordatorio masivo</button></div>
+          <div class="ai"><i class="ti ti-alert-circle" style="color:var(--red);font-size:20px;flex-shrink:0"></i><div class="ai-n">Sofía Medina — Gerente</div><div class="ai-i">1/6 cr.</div><span class="badge b-re">Cierre en 5 días</span><button class="btn btn-sm" onclick="alert('Alerta enviada.')">Alertar</button></div>
+          <div class="ai"><i class="ti ti-alert-circle" style="color:var(--amber);font-size:20px;flex-shrink:0"></i><div class="ai-n">Roberto Salinas — Analista</div><div class="ai-i">0/5 cr.</div><span class="badge b-bo">Sin acción</span><button class="btn btn-sm" onclick="alert('Alerta enviada.')">Alertar</button></div>
+          <div class="ai"><i class="ti ti-alert-circle" style="color:var(--amber);font-size:20px;flex-shrink:0"></i><div class="ai-n">Carmen Villalobos — Coordinadora</div><div class="ai-i">3/8 cr.</div><span class="badge b-re">Plan devuelto</span><button class="btn btn-sm">Alertar</button></div>
+          <div style="font-size:12px;color:var(--gray-400);margin-top:12px;text-align:center">+38 colaboradores más</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DETALLE -->
+<div class="mo" id="mod-detail">
+  <div class="mb">
+    <div class="mh"><div><div class="mt" id="md-t"></div><div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap" id="md-b"></div></div><button class="mc-btn" onclick="closeModal('mod-detail')"><i class="ti ti-x"></i></button></div>
+    <div class="mbody">
+      <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:16px" id="md-d"></p>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:12px 14px;background:var(--gray-50);border-radius:var(--r-md);border:1px solid var(--gray-100)">
+        <i class="ti ti-building" style="font-size:18px;color:var(--blue)"></i>
+        <div><div style="font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px">Facilitador</div><div class="fac-chip" id="md-f"></div></div>
+      </div>
+      <div id="md-locked" style="display:none;margin-bottom:14px">
+        <div style="background:var(--purple-light);border-radius:var(--r-md);padding:10px 14px;display:flex;align-items:center;gap:8px;font-size:13px;color:#5B21B6;border:1px solid var(--purple-mid)"><i class="ti ti-lock" style="font-size:16px"></i><span>Esta formación fue asignada por Capacitación como <strong>Esencial obligatoria</strong> y no puede quitarse del plan.</span></div>
+      </div>
+      <div class="ds">
+        <div class="dsc"><div class="dsc-l">Duración</div><div class="dsc-v" id="md-du"></div></div>
+        <div class="dsc"><div class="dsc-l">Modalidad</div><div class="dsc-v" id="md-mo"></div></div>
+        <div class="dsc"><div class="dsc-l">Créditos</div><div class="dsc-v" id="md-cr"></div></div>
+      </div>
+    </div>
+    <div class="mfoot"><button class="btn" onclick="closeModal('mod-detail')">Cerrar</button><button class="btn btn-p" id="md-act" onclick="toggleFromModal()"></button></div>
+  </div>
+</div>
+
+<!-- MODAL ENVÍO -->
+<div class="mo" id="mod-send">
+  <div class="mb">
+    <div class="mh"><div><div class="mt">Confirmar envío a supervisor</div><div style="font-size:12px;color:var(--gray-400);margin-top:2px" id="send-sub">Plan 26-27</div></div><button class="mc-btn" onclick="closeModal('mod-send')"><i class="ti ti-x"></i></button></div>
+    <div class="mbody">
+      <div id="send-sum" style="margin-bottom:16px"></div>
+      <div id="send-sup-chk" style="margin-bottom:16px"></div>
+      <div style="font-size:12px;font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px">Correo que recibirá tu supervisor</div>
+      <div class="ep"><strong>Para:</strong> <span id="e-to">—</span><br><strong>Asunto:</strong> Plan de Formación 26-27 — (pendiente de aprobación)<br><br>Hola, <strong><span id="e-sn">—</span></strong>. Tu colaborador/a ha diseñado su plan de formación 2026-27 y lo envía para tu revisión formación por formación.<br><br><span id="e-sum"></span></div>
+    </div>
+    <div class="mfoot"><button class="btn" onclick="closeModal('mod-send')">Cancelar</button><button class="btn btn-p" id="send-btn" onclick="confirmSend()"><i class="ti ti-send"></i> Confirmar envío</button></div>
+  </div>
+</div>
+
+<!-- MODAL COMENTARIO -->
+<div class="mo" id="mod-comment">
+  <div class="mb">
+    <div class="mh"><div class="mt">Devolver plan con comentarios</div><button class="mc-btn" onclick="closeModal('mod-comment')"><i class="ti ti-x"></i></button></div>
+    <div class="mbody"><p style="font-size:13px;color:var(--gray-600);margin-bottom:12px">Este mensaje llegará al colaborador por correo y como notificación en Academia.</p><div class="field"><label>Comentario</label><textarea rows="4" placeholder="Ej: Te sugiero las electivas de Liderazgo del IESA..."></textarea></div></div>
+    <div class="mfoot"><button class="btn" onclick="closeModal('mod-comment')">Cancelar</button><button class="btn btn-p" onclick="alert('Plan devuelto con comentarios.');closeModal('mod-comment')"><i class="ti ti-arrow-back-up"></i> Enviar y devolver</button></div>
+  </div>
+</div>
+
+<script>
+// ── CONFIGURACIÓN ─────────────────────────────────────────────
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxJFS8EKCsxxFFTQFdDNQOv0uxBz6RVXPwE1SDsM5B-Q-lNAcT65mdIvVrbRsrqjSfZ/exec";
+var FECHA_CIERRE_PLAN = '30 de junio 2026'; // Capacitación puede cambiar esta fecha
+var METAS_NIVEL = {Director:4, Gerente:6, Coordinador:8, Especialista:8, Analista:5};
+// ──────────────────────────────────────────────────────────────
+
+var FS=[]; // Catálogo vacío — Capacitación aún no ha cargado formaciones
+var ES_ONLY=FS.filter(function(f){return f.type==='esencial';});
+var NAMES={VP:'Colaborador',LM:'Luis Méndez',AT:'Ana Torres',RS:'Roberto Salinas',CV:'Carmen Villalobos'};
+var ASSIGNS={VP:new Set(),LM:new Set(),AT:new Set(),RS:new Set(),CV:new Set()};
+var CU='VP';
+var META=5;
+var sel=new Set();
+var modalId=null,filter='all',supData={name:'',email:''};
+window.COLAB=null;
+
+// ── LOGIN ──
+function doLogin(){
+  var cedula=document.getElementById('l-cedula').value.trim();
+  if(!cedula||isNaN(cedula)||cedula.length<5){
+    showLoginError('Por favor ingresa un número de cédula válido.');return;
+  }
+  document.getElementById('login-error').style.display='none';
+  document.getElementById('loading-msg').style.display='block';
+  document.getElementById('l-cedula').disabled=true;
+  document.querySelector('.lb').disabled=true;
+
+  if(!SCRIPT_URL||SCRIPT_URL.includes('PEGA_AQUI')){
+    // Demo mode
+    setTimeout(function(){
+      entrarConDatos({cedula:cedula,nombre:'Demo',apellido:'Usuario',cargo:'ANALISTA',unidad:'DESARROLLO',area:'OFICINA',nivel:'Analista',formaciones_completadas:[]});
+    },800);
+    return;
+  }
+
+  var cbName='cb'+Date.now();
+  var script=document.createElement('script');
+  window[cbName]=function(data){
+    document.getElementById('loading-msg').style.display='none';
+    document.getElementById('l-cedula').disabled=false;
+    document.querySelector('.lb').disabled=false;
+    try{if(script.parentNode)script.parentNode.removeChild(script);}catch(e){}
+    try{delete window[cbName];}catch(e){}
+    if(data&&data.ok&&data.colaborador){
+      entrarConDatos(data.colaborador);
+    }else{
+      showLoginError((data&&data.mensaje)?data.mensaje:'Cédula no encontrada en el sistema.');
+    }
+  };
+  script.onerror=function(){
+    document.getElementById('loading-msg').style.display='none';
+    document.getElementById('l-cedula').disabled=false;
+    document.querySelector('.lb').disabled=false;
+    showLoginError('Error de conexión. Intenta nuevamente.');
+    try{if(script.parentNode)script.parentNode.removeChild(script);}catch(e){}
+  };
+  var sep=SCRIPT_URL.indexOf('?')>=0?'&':'?';
+  script.src=SCRIPT_URL+sep+'cedula='+encodeURIComponent(cedula)+'&callback='+cbName;
+  document.head.appendChild(script);
+}
+
+function showLoginError(msg){
+  document.getElementById('login-error').textContent=msg;
+  document.getElementById('login-error').style.display='block';
+  document.getElementById('loading-msg').style.display='none';
+  document.getElementById('l-cedula').disabled=false;
+  document.querySelector('.lb').disabled=false;
+}
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Enter'&&document.getElementById('login-screen').style.display!=='none')doLogin();
+});
+
+// ── ENTRAR CON DATOS ──
+window.entrarConDatos=function(col){
+  window.COLAB=col;
+
+  // Detectar nivel desde cargo
+  var cargoLow=(col.cargo||'').toLowerCase();
+  var nivel=col.nivel||'Analista';
+  if(cargoLow.indexOf('director')>=0||cargoLow.indexOf('vicepres')>=0) nivel='Director';
+  else if(cargoLow.indexOf('gerente')>=0||cargoLow.indexOf('jefe')>=0) nivel='Gerente';
+  else if(cargoLow.indexOf('coord')>=0||cargoLow.indexOf('especialista')>=0||cargoLow.indexOf('supervisor')>=0) nivel='Coordinador';
+  else if(cargoLow.indexOf('analista')>=0||cargoLow.indexOf('asistente')>=0) nivel='Analista';
+  col.nivelDetectado=nivel;
+
+  META=METAS_NIVEL[nivel]||5;
+
+  // Nombre e iniciales
+  var nombreCompleto=((col.nombre||'')+' '+(col.apellido||'')).trim()||'C.I. '+col.cedula;
+  var partes=nombreCompleto.split(' ');
+  var ini=partes.map(function(p){return p&&p[0]?p[0].toUpperCase():'';}).join('').slice(0,2)||'CO';
+
+  // Topbar
+  document.getElementById('t-av').textContent=ini;
+  document.getElementById('t-em').textContent='C.I. '+col.cedula;
+
+  // Hero
+  document.getElementById('hero-av').textContent=ini;
+  document.getElementById('hero-name').textContent=nombreCompleto;
+  document.getElementById('hero-role').textContent=(col.cargo||'')+(col.unidad?' · '+col.unidad:'');
+  document.getElementById('cr-meta').textContent='meta: '+META+' créditos';
+  document.getElementById('pr-pct').textContent='0 / '+META+' cr.';
+
+  // Oferta title
+  document.getElementById('oferta-title').textContent='Oferta académica — '+nivel+' · '+(col.unidad||col.area||'Oficina Corporativa');
+
+  // Supervisor panel
+  document.getElementById('sup-name1').textContent=nombreCompleto;
+  document.getElementById('sup-av1').textContent=ini;
+
+  // Fecha cierre
+  var fcEl=document.getElementById('fecha-cierre-txt');
+  if(fcEl) fcEl.textContent=FECHA_CIERRE_PLAN;
+
+  // Mostrar app
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('app').style.display='block';
+
+  // Render
+  renderGrid();
+  renderSelected();
+  renderATable();
+
+  // Historial
+  if(col.formaciones_completadas&&col.formaciones_completadas.length>0){
+    mostrarHistorial(col.formaciones_completadas);
+  }
+};
+
+function mostrarHistorial(formaciones){
+  if(!formaciones||formaciones.length===0)return;
+  // Marcar en catálogo si hay formaciones cargadas
+  if(FS.length>0){
+    formaciones.forEach(function(f){
+      var fn=(f.nombre||'').toLowerCase().trim();
+      FS.forEach(function(cat){
+        if(cat.name.toLowerCase().indexOf(fn)>=0||fn.indexOf(cat.name.toLowerCase())>=0){
+          cat.completada=true;cat.fechaComp=f.fecha||'';
+        }
+      });
+    });
+    renderGrid();
+  }
+  // Mostrar sección historial
+  document.getElementById('historial-section').style.display='block';
+  document.getElementById('hist-count').textContent=formaciones.length+' completada'+(formaciones.length!==1?'s':'');
+  var listEl=document.getElementById('hist-list');
+  listEl.innerHTML=formaciones.map(function(f){
+    var facilitador=f.facilitador||f.fac||'';
+    var horas=f.horas||f.hrs||'';
+    return '<div class="hist-item">'
+      +'<i class="ti ti-circle-check" style="color:var(--green);font-size:18px;flex-shrink:0"></i>'
+      +'<div style="flex:1">'
+      +'<div style="font-size:13px;font-weight:500">'+(f.nombre||'')+'</div>'
+      +'<div style="font-size:11px;color:var(--gray-400);margin-top:3px;display:flex;gap:10px;flex-wrap:wrap">'
+      +(f.fecha?'<span><i class="ti ti-calendar"></i> '+f.fecha+'</span>':'')
+      +(facilitador?'<span><i class="ti ti-building"></i> '+facilitador+'</span>':'')
+      +(horas?'<span><i class="ti ti-clock"></i> '+horas+'</span>':'')
+      +'</div>'
+      +'</div>'
+      +'<span class="badge b-e">Completada</span>'
+      +'</div>';
+  }).join('');
+  // Notificación
+  var notifList=document.getElementById('notif-list');
+  var ni=document.createElement('div');ni.className='ni';
+  ni.innerHTML='<div class="nd" style="background:var(--green)"></div><div><div style="font-size:13px;color:var(--gray-600)">Tienes <strong>'+formaciones.length+' formaciones completadas</strong> en tu historial. Ver sección abajo.</div></div>';
+  notifList.appendChild(ni);
+}
+
+// ── SUPERVISOR ──
+function saveSup(){
+  var n=document.getElementById('s-name').value.trim();
+  var em=document.getElementById('s-email').value.trim();
+  if(!n){alert('Ingresa el nombre del supervisor.');return;}
+  if(!em.includes('@')){alert('Ingresa un correo válido.');return;}
+  supData={name:n,email:em};
+  document.getElementById('sup-form-box').style.display='none';
+  document.getElementById('sup-saved-box').style.display='block';
+  document.getElementById('sup-saved-name').textContent=n;
+  document.getElementById('sup-saved-email').textContent=em;
+}
+function editSup(){
+  document.getElementById('sup-saved-box').style.display='none';
+  document.getElementById('sup-form-box').style.display='block';
+  document.getElementById('s-name').value=supData.name;
+  document.getElementById('s-email').value=supData.email;
+  supData={name:'',email:''};
+}
+
+// ── FECHA CIERRE ──
+function actualizarFechaCierre(){
+  var val=document.getElementById('fecha-cierre-input').value.trim();
+  if(!val)return;
+  FECHA_CIERRE_PLAN=val;
+  var fcEl=document.getElementById('fecha-cierre-txt');
+  if(fcEl)fcEl.textContent=val;
+  var ok=document.getElementById('fecha-ok');
+  ok.style.display='inline-flex';
+  setTimeout(function(){ok.style.display='none';},3000);
+}
+
+// ── NAVEGACIÓN ──
+function showView(n,btn){
+  document.querySelectorAll('.app-body').forEach(function(v){v.classList.remove('active');});
+  document.querySelectorAll('.tnav').forEach(function(t){t.classList.remove('active');});
+  document.getElementById('view-'+n).classList.add('active');
+  btn.classList.add('active');
+}
+function supTab(t,btn){
+  ['pend','sug','hist'].forEach(function(x){var el=document.getElementById('sup-'+x);if(el)el.style.display='none';});
+  document.querySelectorAll('#view-supervisor .tab').forEach(function(t){t.classList.remove('active');});
+  document.getElementById('sup-'+t).style.display='block';btn.classList.add('active');
+}
+function capTab(t,btn){
+  ['dash','asign','cat','alert'].forEach(function(x){var el=document.getElementById('cap-'+x);if(el)el.style.display='none';});
+  document.querySelectorAll('#view-capacitacion .tab').forEach(function(t){t.classList.remove('active');});
+  document.getElementById('cap-'+t).style.display='block';btn.classList.add('active');
+  if(t==='asign')renderATable();
+}
+
+// ── ASIGNAR ESENCIALES ──
+function renderCklist(){
+  var cv=document.getElementById('a-collab').value;
+  var locked=cv?ASSIGNS[cv]:new Set();
+  var cont=document.getElementById('ck-list');
+  if(!cv){cont.innerHTML='<div style="font-size:13px;color:var(--gray-400);padding:12px;text-align:center;border:1.5px dashed var(--gray-200);border-radius:var(--r-md)">Selecciona un colaborador</div>';return;}
+  cont.innerHTML=ES_ONLY.map(function(f){return '<label class="ck-item"><input type="checkbox" id="ck'+f.id+'" '+(locked.has(f.id)?'checked':'')+'><div><div style="font-size:13px;font-weight:500">'+f.name+'</div><div style="font-size:11px;color:var(--gray-400)">'+f.fac+' · '+f.credits+' cr. · '+f.mode+'</div></div></label>';}).join('');
+  document.getElementById('a-ok').style.display='none';
+}
+function saveAssign(){
+  var cv=document.getElementById('a-collab').value;
+  if(!cv){alert('Selecciona un colaborador.');return;}
+  var ns=new Set();
+  ES_ONLY.forEach(function(f){var c=document.getElementById('ck'+f.id);if(c&&c.checked)ns.add(f.id);});
+  ASSIGNS[cv]=ns;
+  if(cv===CU){ns.forEach(function(id){sel.add(id);});renderGrid();renderSelected();}
+  renderATable();
+  var ok=document.getElementById('a-ok');ok.style.display='inline-flex';
+  setTimeout(function(){ok.style.display='none';},3000);
+}
+function renderATable(){
+  var tb=document.getElementById('a-tbody');if(!tb)return;
+  tb.innerHTML=Object.entries(ASSIGNS).map(function(entry){
+    var k=entry[0],ids=entry[1];
+    var tags=[...ids].map(function(id){var f=FS.find(function(x){return x.id===id;});return f?'<span class="etag"><i class="ti ti-lock" style="font-size:10px"></i>'+f.name.split('—')[0].trim()+'</span>':''}).join('');
+    return '<tr><td style="font-weight:500">'+(NAMES[k]||k)+'</td><td>'+(tags||'<span style="color:var(--gray-400);font-size:12px">Sin asignación</span>')+'</td><td><button class="btn btn-sm btn-ic" onclick="document.getElementById(\'a-collab\').value=\''+k+'\';renderCklist();"><i class="ti ti-edit"></i></button></td></tr>';
+  }).join('');
+}
+
+// ── GRID ──
+function renderGrid(){
+  var grid=document.getElementById('fgrid');if(!grid)return;
+  if(FS.length===0){
+    grid.innerHTML='<div class="empty" style="grid-column:1/-1;padding:40px 20px"><i class="ti ti-books" style="font-size:40px;display:block;margin-bottom:10px;color:var(--gray-200)"></i><div style="font-size:14px;font-weight:500;margin-bottom:4px;color:var(--gray-400)">El catálogo aún no tiene formaciones</div><div style="font-size:12px;color:var(--gray-400)">El equipo de Capacitación publicará la oferta académica próximamente.</div></div>';
+    updateMet();renderSelected();return;
+  }
+  var vis=FS.filter(function(f){return filter==='all'||(filter==='esencial'&&f.type==='esencial')||(filter==='electiva'&&f.type==='electiva');});
+  var locked=ASSIGNS[CU]||new Set();
+  grid.innerHTML=vis.map(function(f){
+    var isL=locked.has(f.id),isS=sel.has(f.id),isDone=f.completada||false;
+    return '<div class="fcard'+(isS&&!isL?' sel':'')+(isL?' locked':'')+(f.sug&&!isL?' sug':'')+'" onclick="openDetail('+f.id+')">'
+      +'<div class="fcard-top">'
+      +'<span class="badge '+(f.type==='esencial'?'b-e':'b-el')+'">'+(f.type==='esencial'?'Esencial':'Electiva')+'</span>'
+      +(isL?'<span class="badge b-ob"><i class="ti ti-lock"></i> Obligatoria</span>':'')
+      +(f.sug&&!isL?'<span class="badge b-su"><i class="ti ti-star"></i> Sugerida</span>':'')
+      +(isDone?'<span class="badge" style="background:#E1F5EE;color:#085041"><i class="ti ti-check"></i> Realizada</span>':'')
+      +'</div>'
+      +'<div class="fcard-name">'+f.name+'</div>'
+      +'<div class="fcard-meta"><i class="ti ti-clock"></i>'+f.dur+' <i class="ti ti-device-laptop"></i>'+f.mode+'</div>'
+      +'<div class="fcard-fac"><i class="ti ti-building" style="font-size:12px"></i>'+f.fac+'</div>'
+      +(isL?'<div class="locked-banner"><i class="ti ti-lock" style="font-size:11px"></i> Asignada por Capacitación</div>':'')
+      +(isDone?'<div style="margin-top:4px;font-size:11px;color:#1D9E75">'+(f.fechaComp?'<i class="ti ti-calendar"></i> '+f.fechaComp:'Completada anteriormente')+'</div>':'')
+      +'<span class="fcard-cr">'+f.credits+' cr.</span>'
+      +(isL?'<div class="fcard-lock"><i class="ti ti-lock"></i></div>':isS?'<div class="fcard-tick"><i class="ti ti-check"></i></div>':'')
+      +'</div>';
+  }).join('');
+  updateMet();renderSelected();
+}
+function filterF(t,el){
+  filter=t;
+  document.querySelectorAll('#fp .pill').forEach(function(p){p.classList.remove('active');});
+  el.classList.add('active');renderGrid();
+}
+function updateMet(){
+  var cr=0,hrs=0;
+  sel.forEach(function(id){var f=FS.find(function(x){return x.id===id;});if(f){cr+=f.credits;hrs+=f.hrs;}});
+  document.getElementById('cr-d').textContent=cr;
+  document.getElementById('f-d').textContent=sel.size;
+  document.getElementById('h-d').textContent=hrs+'h';
+  var pct=Math.round(cr/META*100);
+  document.getElementById('h-bar').style.width=Math.min(pct,100)+'%';
+  document.getElementById('pr-txt').textContent=pct+'% del objetivo alcanzado';
+  document.getElementById('pr-pct').textContent=cr+' / '+META+' cr.';
+}
+function renderSelected(){
+  var el=document.getElementById('sel-list');
+  var locked=ASSIGNS[CU]||new Set();
+  if(sel.size===0){el.innerHTML='<div class="empty"><i class="ti ti-layout-grid-add"></i>Las Esenciales obligatorias aparecerán aquí. Agrega Electivas desde la oferta académica.</div>';return;}
+  var ordered=[...[...locked].filter(function(id){return sel.has(id);}),...[...sel].filter(function(id){return !locked.has(id);})];
+  el.innerHTML=ordered.map(function(id){
+    var f=FS.find(function(x){return x.id===id;});if(!f)return'';
+    var isL=locked.has(id);
+    return '<div class="si'+(isL?' locked-si':'')+'">'
+      +'<div class="si-name">'+(isL?'<i class="ti ti-lock" style="color:var(--purple);margin-right:4px"></i>':'')+f.name+'</div>'
+      +'<div class="si-tags">'
+      +'<span class="badge '+(f.type==='esencial'?'b-e':'b-el')+'">'+(f.type==='esencial'?'Esencial':'Electiva')+'</span>'
+      +(isL?'<span class="badge b-ob"><i class="ti ti-lock"></i> Obligatoria</span>':'')
+      +'<span style="font-size:12px;color:var(--gray-400)">'+f.credits+' cr.</span>'
+      +(!isL?'<button class="btn btn-sm btn-ic" onclick="removeF('+f.id+')" style="border:none;color:var(--gray-400)"><i class="ti ti-x"></i></button>':'')
+      +'</div></div>';
+  }).join('');
+}
+function removeF(id){if(ASSIGNS[CU].has(id))return;sel.delete(id);renderGrid();}
+
+// ── MODAL DETALLE ──
+function openDetail(id){
+  var f=FS.find(function(x){return x.id===id;});if(!f)return;
+  modalId=id;
+  var isL=ASSIGNS[CU].has(id);
+  document.getElementById('md-t').textContent=f.name;
+  document.getElementById('md-b').innerHTML='<span class="badge '+(f.type==='esencial'?'b-e':'b-el')+'">'+(f.type==='esencial'?'Esencial':'Electiva')+'</span><span class="tag-n">'+f.nivel+'</span>'+(isL?'<span class="badge b-ob"><i class="ti ti-lock"></i> Obligatoria</span>':'')+(f.completada?'<span class="badge" style="background:#E1F5EE;color:#085041"><i class="ti ti-check"></i> Realizada</span>':'');
+  document.getElementById('md-d').textContent=f.desc;
+  document.getElementById('md-f').innerHTML='<i class="ti ti-building" style="font-size:13px"></i>'+f.fac;
+  document.getElementById('md-du').textContent=f.dur;
+  document.getElementById('md-mo').textContent=f.mode;
+  document.getElementById('md-cr').textContent=f.credits+' crédito'+(f.credits>1?'s':'');
+  document.getElementById('md-locked').style.display=isL?'block':'none';
+  var btn=document.getElementById('md-act');
+  if(isL){btn.textContent='Ya incluida en tu plan';btn.className='btn';btn.disabled=true;}
+  else if(sel.has(id)){btn.textContent='Quitar del plan';btn.className='btn';btn.disabled=false;}
+  else{btn.innerHTML='<i class="ti ti-plus"></i> Agregar al plan';btn.className='btn btn-p';btn.disabled=false;}
+  document.getElementById('mod-detail').classList.add('open');
+}
+function toggleFromModal(){
+  if(ASSIGNS[CU].has(modalId))return;
+  if(sel.has(modalId))sel.delete(modalId);else sel.add(modalId);
+  renderGrid();closeModal('mod-detail');
+}
+
+// ── MODAL ENVÍO ──
+function openSendModal(){
+  if(sel.size===0){alert('Agrega al menos una formación a tu plan.');return;}
+  var cr=0;sel.forEach(function(id){var f=FS.find(function(x){return x.id===id;});if(f)cr+=f.credits;});
+  var col=window.COLAB||{};
+  var nombre=((col.nombre||'')+' '+(col.apellido||'')).trim()||('C.I. '+(col.cedula||''));
+  document.getElementById('send-sub').textContent=nombre+' · Plan 26-27';
+  document.getElementById('send-sum').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px"><div class="dsc"><div class="dsc-l">Formaciones</div><div class="dsc-v">'+sel.size+'</div></div><div class="dsc"><div class="dsc-l">Créditos</div><div class="dsc-v">'+cr+'</div></div><div class="dsc"><div class="dsc-l">Meta</div><div class="dsc-v">'+META+' cr.</div></div></div>';
+  var hasSup=supData.name&&supData.email;
+  document.getElementById('send-sup-chk').innerHTML=hasSup
+    ?'<div style="background:var(--green-light);border:1px solid #6EE7C2;border-radius:var(--r-md);padding:10px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:#085041"><i class="ti ti-user-check" style="font-size:18px"></i><div><strong>'+supData.name+'</strong><div style="font-size:12px;opacity:.8">'+supData.email+'</div></div></div>'
+    :'<div style="background:var(--red-light);border:1px solid #F7C1C1;border-radius:var(--r-md);padding:10px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:#791F1F"><i class="ti ti-alert-circle" style="font-size:18px"></i><span>No has registrado a tu supervisor. <strong>Completa sus datos antes de enviar.</strong></span></div>';
+  document.getElementById('e-to').textContent=hasSup?supData.email:'—';
+  document.getElementById('e-sn').textContent=hasSup?supData.name:'—';
+  document.getElementById('e-sum').innerHTML='<strong>Resumen:</strong> '+cr+' créditos en '+sel.size+' formaciones.';
+  var btn=document.getElementById('send-btn');
+  btn.disabled=!hasSup;btn.className=hasSup?'btn btn-p':'btn';
+  document.getElementById('mod-send').classList.add('open');
+}
+function confirmSend(){
+  closeModal('mod-send');
+  document.getElementById('plan-status').textContent='Enviado';
+  document.getElementById('plan-status').className='badge b-en';
+  alert('¡Plan enviado con éxito!\n\n'+supData.name+' ('+supData.email+') recibirá el correo con el resumen de tu plan para aprobarlo formación por formación.');
+}
+
+// ── SUPERVISOR ──
+function togglePlan(h){h.nextElementSibling.classList.toggle('open');}
+function setSup(n,s){
+  var el=document.getElementById('fr'+n);if(!el)return;
+  var lb={ap:'Aprobado',re:'Rechazado',di:'Por discutir'};
+  var cl={ap:'b-ap',re:'b-re',di:'b-di'};
+  el.innerHTML='<span class="badge '+cl[s]+'">'+lb[s]+'</span>';
+}
+function approveAll(){[1,2,3].forEach(function(n){setSup(n,'ap');});alert('Plan aprobado. El colaborador recibirá notificación por correo y en Academia.');}
+function openCommentModal(){document.getElementById('mod-comment').classList.add('open');}
+
+// ── MODALS ──
+function closeModal(id){document.getElementById(id).classList.remove('open');}
+document.querySelectorAll('.mo').forEach(function(o){o.addEventListener('click',function(e){if(e.target===o)o.classList.remove('open');});});
+</script>
+</body>
+</html>
